@@ -22,8 +22,10 @@ Aby uruchomić aplikację BeBetter, potrzebujesz następujących narzędzi:
 5. Zainstaluj wymagane zależności, wykonując poniższą komendę:
 ``` npm install ```
 
-Po zakończeniu instalacji uruchom aplikację, wpisując:
+Po zakończeniu instalacji przenieś się do folderu backend i uruchom aplikację, wpisując:
+```cd backend```
 ```node index.js```
+I otwierając "index.html".
 
 Aplikacja BeBetter zostanie uruchomiona na lokalnym serwerze. Otwórz przeglądarkę i przejdź pod adres http://localhost:3000, aby korzystać z aplikacji.
 Lub wejdź na naszą domenę hackheroes.mrawsky.fun
