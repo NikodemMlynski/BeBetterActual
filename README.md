@@ -66,3 +66,5 @@ Nikodem Młyński Deweloper
 Kuba Schreiber Gfx, Dokumentacja
 
 Mikołaj Morawski Deweloper, Gfx, Dokumentacja
+
+Dokładniejsze i lepiej zobrazowane informacje na temat projektu znajdują się w pliku Dokumentacja.pdf
