@@ -150,6 +150,7 @@ html, body {
         text-align: center;
         font-size: 28px;
         padding: 0.4em 0;
+        font-family: 'Courier New', Courier, monospace;
     }
     .goals_container{
         #goals_container_no_goal_alert{
@@ -191,6 +192,7 @@ html, body {
                 opacity: 0.6;
                 cursor: pointer;
                 transition: all 0.2s ease;
+                width: 30px;
                 &:hover{
                     opacity: 0.85;
                 }
@@ -415,6 +417,10 @@ html, body {
                 padding: 0.35em 0.5em;
                 text-align: center;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .tool_icons{
+                width: 60px;
+                height: 60px;
             }
         }
     }
@@ -847,6 +853,7 @@ html, body {
     .main_header{
         margin: 1em auto;
         .main_header_heading{
+            font-family: 'Courier New', Courier, monospace;
             padding: 0.5em;
             font-size: 30px;
             text-align: center;
@@ -861,7 +868,7 @@ html, body {
         flex-wrap: wrap;
         .progres_menu_button{
             color: #ddfafa;
-            background-color: rgba(0, 158, 160, 0.9);
+            background-color: rgba(109, 179, 180, 0.9);
             border: 0;
             border-radius: 0.4em 0.7em;
             padding: 0.8em 2em;

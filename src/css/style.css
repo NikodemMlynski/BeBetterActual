@@ -150,6 +150,7 @@ html, body {
   text-align: center;
   font-size: 28px;
   padding: 0.4em 0;
+  font-family: "Courier New", Courier, monospace;
 }
 .main .goals_container {
   width: 95%;
@@ -191,6 +192,7 @@ html, body {
   opacity: 0.6;
   cursor: pointer;
   transition: all 0.2s ease;
+  width: 30px;
 }
 .main .goals_container .goal .complete_goal_icon:hover, .main .goals_container .goal .delete_goal_icon:hover {
   opacity: 0.85;
@@ -380,6 +382,10 @@ html, body {
   padding: 0.35em 0.5em;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#tools_main .tools_container .tool .tool_icons {
+  width: 60px;
+  height: 60px;
 }
 #tools_main .actual_selected_tool {
   position: relative;
@@ -772,6 +778,7 @@ html, body {
   margin: 1em auto;
 }
 #progres_main .main_header .main_header_heading {
+  font-family: "Courier New", Courier, monospace;
   padding: 0.5em;
   font-size: 30px;
   text-align: center;
@@ -786,7 +793,7 @@ html, body {
 }
 #progres_main .progres_menu .progres_menu_button {
   color: #ddfafa;
-  background-color: rgba(0, 158, 160, 0.9);
+  background-color: rgba(109, 179, 180, 0.9);
   border: 0;
   border-radius: 0.4em 0.7em;
   padding: 0.8em 2em;
