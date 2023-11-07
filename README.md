@@ -10,6 +10,7 @@ Aby uruchomić aplikację BeBetter, potrzebujesz następujących narzędzi:
 
 - Przeglądarka internetowa
 - Node.js (zawierający npm)
+- mongodb
 
 ## Instrukcja instalacji
 
