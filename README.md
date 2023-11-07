@@ -31,10 +31,15 @@ Aplikacja BeBetter zostanie uruchomiona na lokalnym serwerze. Otwórz przegląda
 Aplikacja BeBetter korzysta z następujących zależności, które zostaną zainstalowane za pomocą npm:
 
 -cors: ^2.8.5
+
 -crypto: ^1.0.1
+
 -express: ^4.18.2
+
 -mongodb: ^6.1.0
+
 -nodemon: ^3.0.1
+
 ##Funkcje
 Planer nawyków: Pozwala na dodawanie nawyków z tytułem, czasem wykonania i opcjonalnym opisem.
 
