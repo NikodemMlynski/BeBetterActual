@@ -26,8 +26,9 @@ Po zakończeniu instalacji uruchom aplikację, wpisując:
 ```node index.js```
 
 Aplikacja BeBetter zostanie uruchomiona na lokalnym serwerze. Otwórz przeglądarkę i przejdź pod adres http://localhost:3000, aby korzystać z aplikacji.
+Lub wejdź na naszą domenę hackheroes.mrawsky.fun
 
-##Zależności
+## Zależności
 Aplikacja BeBetter korzysta z następujących zależności, które zostaną zainstalowane za pomocą npm:
 
 -cors: ^2.8.5
@@ -40,7 +41,7 @@ Aplikacja BeBetter korzysta z następujących zależności, które zostaną zain
 
 -nodemon: ^3.0.1
 
-##Funkcje
+## Funkcje
 Planer nawyków: Pozwala na dodawanie nawyków z tytułem, czasem wykonania i opcjonalnym opisem.
 
 Inteligentny dziennik: Pozwala na dodawanie wpisów z dnia, zawierających ogólny opis dnia, co zostało zrobione dobrze i źle, ilość snu, jakość snu, ilość spożytych kalorii oraz czas poświęcony na wykonywanie nawyków.
@@ -51,9 +52,10 @@ Dodawanie celów długoterminowych: Pozwala na dodawanie długoterminowych celó
 
 Afirmacje: Wyświetla afirmacje wygenerowane z użyciem sztucznej inteligencji.
 
-##Licencja
+## Licencja
 Ten projekt jest licencjonowany na podstawie Apache License Version 2.0, zdatnej od stycznia 2004 roku.
 
-##Autorzy
-Nikodem Młyński
-Kuba Schreiber (póki co nieaktywny)
+## Autorzy
+Nikodem Młyński Deweloper
+Kuba Schreiber Gfx, Dokumentacja
+Mikołaj Morawski Deweloper, Gfx, Dokumentacja
