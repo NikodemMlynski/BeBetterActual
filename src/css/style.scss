@@ -49,7 +49,7 @@ html, body {
                     text-decoration: none;
                     color: white;
                     width: 12em;
-                    font-family: 'Courier New', Courier, monospace;
+                    font-family: sans-serif;
                     font-size: 20px;
                     padding: 1em 5%;
                     transition: 0.4s all ease-out;
@@ -150,7 +150,7 @@ html, body {
         text-align: center;
         font-size: 28px;
         padding: 0.4em 0;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: sans-serif;
     }
     .goals_container{
         #goals_container_no_goal_alert{
@@ -645,7 +645,7 @@ html, body {
                 letter-spacing: 0.06em;
                 line-height: 1.5em;
                 font-size: 24px;
-                font-family: 'Pacifico', cursive;
+                font-family: 'Pacifico', cursive, sans-serif;
             }
             .afirmations_arrows{
                 width: 50px;
@@ -755,7 +755,7 @@ html, body {
                     text-align: center;
                     padding: 1em 1.6em;
                     font-size: 20px;
-                    font-family: 'Pacifico', cursive;
+                    font-family: 'Pacifico', cursive, sans-serif;
                 }  
             }
         }
@@ -775,7 +775,7 @@ html, body {
         .notatnik_your_long_term_goal_header{
             .notatnik_your_long_term_goal_heading{
                 font-size: 30px;
-                font-family: cursive;
+                font-family: cursive, sans-serif;
                 text-align: center;
                 padding: 0.3em;
             }
@@ -801,7 +801,7 @@ html, body {
             padding: 1em;
             .notatnik_your_long_term_goal_list_item{
                 font-size: 16px;
-                font-family:  monospace;
+                font-family:  cursive, sans-serif;
                 margin: 0 2%;
             }
 
@@ -829,7 +829,7 @@ html, body {
                 .diary_note_question{
                     font-size: 16px;
                     font-weight: normal;
-                    font-family: cursive;
+                    font-family: cursive, sans-serif;
                     padding: 0.4em 0.8em; 
 
                 }
@@ -853,7 +853,7 @@ html, body {
     .main_header{
         margin: 1em auto;
         .main_header_heading{
-            font-family: 'Courier New', Courier, monospace;
+            font-family: cursive, sans-serif;
             padding: 0.5em;
             font-size: 30px;
             text-align: center;
@@ -900,12 +900,12 @@ html, body {
             .progres_title{
                 text-align: left;
                 font-size: 20px;
-                font-family: 'Courier New', Courier, monospace;
+                font-family: cursive, sans-serif;
             }
             .progres_date{
                 font-size: 15px;
                 padding: 0 0.5em;
-                font-family: 'Courier New', Courier, monospace;
+                font-family: cursive, sans-serif;
             }
             .progres_arrows{
                 position: absolute;
