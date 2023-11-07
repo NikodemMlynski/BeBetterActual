@@ -18,9 +18,9 @@ window.onload = function(){
 
 class Slider{
     imagesSrcAndCitesToSlide = [
-        {cite: 'Pamiętaj, że długi i dobrej jakości sen poprawi twoją produktywność w ciągu dnia', imgSrc: 'sleep', link: ''},
-        {cite: 'Codzienne uprawianie sportu, a nawet krótkie spacery, poprawiają nasze zdrowie i przedłużają życie', imgSrc: 'sport', link: ''},
-        {cite: 'Jeżeli codziennie będziesz czytał 10 stron książki. To w rok przeczytasz 10 średniej długości książek', imgSrc: 'books', link: ''},
+        {cite: 'Pamiętaj, że długi i dobrej jakości sen poprawi twoją produktywność w ciągu dnia', imgSrc: 'sleep_icon', link: ''},
+        {cite: 'Codzienne uprawianie sportu, a nawet krótkie spacery, poprawiają nasze zdrowie i przedłużają życie', imgSrc: 'evolution_icon', link: ''},
+        {cite: 'Jeżeli codziennie będziesz czytał 10 stron książki. To w rok przeczytasz 10 średniej długości książek', imgSrc: 'book_icon', link: ''},
     ];
     actualSlide = -1;
     sliderImageSrc = null;
@@ -46,7 +46,7 @@ class Slider{
     }
 
     changeSlide(){
-        this.sliderImageSrc.src = `src/images/${this.imagesSrcAndCitesToSlide[this.actualSlide].imgSrc}.png`;
+        this.sliderImageSrc.src = `src/icons/${this.imagesSrcAndCitesToSlide[this.actualSlide].imgSrc}.png`;
         this.sliderCite.innerHTML = this.imagesSrcAndCitesToSlide[this.actualSlide].cite;
     }
     increaseActualSlided(){
@@ -125,6 +125,7 @@ class TaskDisplayer {
     }
     checkIfTaskCompleted(task){
         if(task.completed) {
+            document.querySelector(`#task${task.task_date} .complete_goal_icon`).src = 'src/icons/chek_out_icon.png';
             document.querySelector(`#task${task.task_date} .goal_title`).classList.add('finished')
             document.querySelector(`#task${task.task_date} .goal_time`).classList.add('finished')
             document.querySelector(`#task${task.task_date} .goal_description`).classList.add('finished')
@@ -132,6 +133,7 @@ class TaskDisplayer {
             document.querySelector(`#task${task.task_date} .goal_title`).classList.remove('finished')
             document.querySelector(`#task${task.task_date} .goal_time`).classList.remove('finished')
             document.querySelector(`#task${task.task_date} .goal_description`).classList.remove('finished')
+            document.querySelector(`#task${task.task_date} .complete_goal_icon`).src = 'src/icons/chek_in_icon.png';
         }
     }
     displayTaskAtSite(tasks, deleteAndCheckOffCallback){
@@ -146,8 +148,9 @@ class TaskDisplayer {
                 const taskHTML = `
                 <section class="goal" id='task${task.task_date}'>
                         <h4 class="goal_title">${task.taskTitle}</h4>
-                        <svg data-goal-obj='${JSON.stringify(task)}' class="delete_goal_icon"  width="35px" height="35px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7.69231 8.70833H5V8.16667H9.84615M7.69231 8.70833V19H16.3077V8.70833M7.69231 8.70833H16.3077M16.3077 8.70833H19V8.16667H14.1538M9.84615 8.16667V6H14.1538V8.16667M9.84615 8.16667H14.1538" stroke="#ffffff" stroke-width="1.32" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M10 11V17" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 11V17" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 11V17" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                        <svg data-goal-obj='${JSON.stringify(task)}'  class='complete_goal_icon' fill="#00ff00" width="30px" height="30px" viewBox="-192 -192 2304.00 2304.00" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M960 1807.059c-467.125 0-847.059-379.934-847.059-847.059 0-467.125 379.934-847.059 847.059-847.059 467.125 0 847.059 379.934 847.059 847.059 0 467.125-379.934 847.059-847.059 847.059M960 0C430.645 0 0 430.645 0 960s430.645 960 960 960 960-430.645 960-960S1489.355 0 960 0M854.344 1157.975 583.059 886.69l-79.85 79.85 351.135 351.133L1454.4 717.617l-79.85-79.85-520.206 520.208Z" fill-rule="evenodd"></path> </g></svg>
+                        <img data-goal-obj='${JSON.stringify(task)}' src="src/icons/chek_in_icon.png" alt="" class="complete_goal_icon">
+                        <img data-goal-obj='${JSON.stringify(task)}' src="src/icons/bin_icon.png" alt="" class="delete_goal_icon">
+                        
     
                         <div class="goal_time_container">
                             <svg width="33px" height="33px" viewBox="-4.8 -4.8 33.60 33.60" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 7V12L14.5 10.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#c8f9d7" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
