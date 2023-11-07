@@ -59,5 +59,7 @@ Ten projekt jest licencjonowany na podstawie Apache License Version 2.0, zdatnej
 
 ## Autorzy
 Nikodem Młyński Deweloper
+
 Kuba Schreiber Gfx, Dokumentacja
+
 Mikołaj Morawski Deweloper, Gfx, Dokumentacja
