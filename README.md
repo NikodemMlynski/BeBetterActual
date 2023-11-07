@@ -1,58 +1,54 @@
-# BeBetter
-BeBetter to aplikacja pozwalającą na
-lepsze organizowanie i planowania dnia,
-oraz sprawdzanie i kontrolowanie tego
-co się danego dnia robiło.
-Strona główna
-wyświetla rady, wygenerowane przez AI
-dotyczace głównie: zdrowia,produktywności,
-oraz planowania dnia. 
-Na stronie glównej
-można też przeglądać wcześniej dodane
-nawyki, a także odhaczać je lub 
-usuwać. 
-Strona notatek, na górze pokazuje 
-twoje cele długoterminowe, a na dole
-pokazuje notatki z poszczególnych dni.
+# BeBetter - Aplikacja do samorozwoju
 
-Strona narzędzi pozwala na najwięcej.
-Zawiera kilka narzędzi takich jak:
--planer nawyków:
-  -pozwala na dodanie nawyków, które 
-   zawierają tytuł, czas wykonania,
-   oraz opis który nie jest wymagany.
-   Przesłanie nawyku bez czasu, lub
-   tytułu nie jest możliwe.
--inteligenty dziennik:
-  -pozwala na dodawanie wpisów z dnia
-   podaję się tak takie informacje jak:
-   - ogólny opis dnia
-   - co dzisiaj zrobiłeś źle
-   - co dzisiaj zrobiłeś dobrze
-   - ilość snu
-   - jakość snu
-   - ilość spożytych kalorii
-   - oraz czas który poświeciło się na
-     wykonywanie nawyków, w danym dniu.
-     Są to te same nawyki które, dodaję
-     się w narzędziu dodawania zadań i
-     które wyświetlają się na stronie
-     głównej.
--ćwiczenia oddechowe:
- ćwiczenia oddechowe zawierają dwa typy
- które można wybrać w banerze ćwiczeń
- oddechowych:
-  - spokojne odychanie(krotki wdech,
-    długi czas trzymania powietrza,
-    oraz długi i powolny wydech)
-  - energiczne oddychanie 
--dodawanie celi długoterminowych:
- - pozwala na dodanie celu
- - długoterminowego. Te cele długoterminowe
- - wyświetlają się potem na stronie notatek.
--afirmacje:
-   wyświetla afirmacje wygenerowane
-   z AI
-Strona wykresy:
- -
+BeBetter to aplikacja pozwalająca na lepsze organizowanie i planowanie dnia, a także na kontrolowanie i sprawdzanie postępów w samorozwoju. Aplikacja oferuje szereg narzędzi, takich jak planowanie nawyków, inteligentny dziennik, ćwiczenia oddechowe, dodawanie celów długoterminowych i wyświetlanie afirmacji wygenerowanych przez AI.
 
+Strona główna wyświetla codziennie wygenerowane porady dotyczące zdrowia, produktywności i planowania dnia. Na stronie głównej można również przeglądać wcześniej dodane nawyki i oznaczać je jako wykonane lub usuwać.
+
+## Wymagania wstępne
+
+Aby uruchomić aplikację BeBetter, potrzebujesz następujących narzędzi:
+
+- Przeglądarka internetowa
+- Node.js (zawierający npm)
+
+## Instrukcja instalacji
+
+1. Sklonuj lub pobierz repozytorium.
+   ```git clone https://github.com/NikodemMlynski/BeBetterActual ```
+
+3. Otwórz terminal i przejdź do katalogu projektu.
+   ``` cd BeBetterActual ```
+
+5. Zainstaluj wymagane zależności, wykonując poniższą komendę:
+
+``` npm install ```
+Po zakończeniu instalacji uruchom aplikację, wpisując:
+```node index.js```
+
+Aplikacja BeBetter zostanie uruchomiona na lokalnym serwerze. Otwórz przeglądarkę i przejdź pod adres http://localhost:3000, aby korzystać z aplikacji.
+
+Zależności
+Aplikacja BeBetter korzysta z następujących zależności, które zostaną zainstalowane za pomocą npm:
+
+cors: ^2.8.5
+crypto: ^1.0.1
+express: ^4.18.2
+mongodb: ^6.1.0
+nodemon: ^3.0.1
+Funkcje
+Planer nawyków: Pozwala na dodawanie nawyków z tytułem, czasem wykonania i opcjonalnym opisem.
+
+Inteligentny dziennik: Pozwala na dodawanie wpisów z dnia, zawierających ogólny opis dnia, co zostało zrobione dobrze i źle, ilość snu, jakość snu, ilość spożytych kalorii oraz czas poświęcony na wykonywanie nawyków.
+
+Ćwiczenia oddechowe: Oferuje dwa rodzaje ćwiczeń oddechowych: spokojne oddychanie i energetyczne oddychanie.
+
+Dodawanie celów długoterminowych: Pozwala na dodawanie długoterminowych celów, które wyświetlają się na stronie notatek.
+
+Afirmacje: Wyświetla afirmacje wygenerowane z użyciem sztucznej inteligencji.
+
+Licencja
+Ten projekt jest licencjonowany na podstawie Apache License Version 2.0, zdatnej od stycznia 2004 roku.
+
+Autorzy
+Nikodem Młyński
+Kuba Schreiber (póki co nieaktywny)
