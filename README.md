@@ -27,15 +27,15 @@ Po zakończeniu instalacji uruchom aplikację, wpisując:
 
 Aplikacja BeBetter zostanie uruchomiona na lokalnym serwerze. Otwórz przeglądarkę i przejdź pod adres http://localhost:3000, aby korzystać z aplikacji.
 
-Zależności
+##Zależności
 Aplikacja BeBetter korzysta z następujących zależności, które zostaną zainstalowane za pomocą npm:
 
-cors: ^2.8.5
-crypto: ^1.0.1
-express: ^4.18.2
-mongodb: ^6.1.0
-nodemon: ^3.0.1
-Funkcje
+-cors: ^2.8.5
+-crypto: ^1.0.1
+-express: ^4.18.2
+-mongodb: ^6.1.0
+-nodemon: ^3.0.1
+##Funkcje
 Planer nawyków: Pozwala na dodawanie nawyków z tytułem, czasem wykonania i opcjonalnym opisem.
 
 Inteligentny dziennik: Pozwala na dodawanie wpisów z dnia, zawierających ogólny opis dnia, co zostało zrobione dobrze i źle, ilość snu, jakość snu, ilość spożytych kalorii oraz czas poświęcony na wykonywanie nawyków.
@@ -46,9 +46,9 @@ Dodawanie celów długoterminowych: Pozwala na dodawanie długoterminowych celó
 
 Afirmacje: Wyświetla afirmacje wygenerowane z użyciem sztucznej inteligencji.
 
-Licencja
+##Licencja
 Ten projekt jest licencjonowany na podstawie Apache License Version 2.0, zdatnej od stycznia 2004 roku.
 
-Autorzy
+##Autorzy
 Nikodem Młyński
 Kuba Schreiber (póki co nieaktywny)
