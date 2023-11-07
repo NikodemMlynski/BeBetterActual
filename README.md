@@ -20,8 +20,8 @@ Aby uruchomić aplikację BeBetter, potrzebujesz następujących narzędzi:
    ``` cd BeBetterActual ```
 
 5. Zainstaluj wymagane zależności, wykonując poniższą komendę:
-
 ``` npm install ```
+
 Po zakończeniu instalacji uruchom aplikację, wpisując:
 ```node index.js```
 
