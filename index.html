@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeBetter</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" href="src/icons/favicon.ico" sizes="16x16" type="image/png">
+    <style>
+        #loading_icon_container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        -webkit-animation: load-out 2s;
+        animation: load-out 2s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    
+  }
+  @-webkit-keyframes load-out {
+        0% {
+        top: 0;
+        opacity: 1;
+        }
+        30%{
+          top: 0;
+          opacity: 1;
+        }
+        100% {
+        top: 100%;
+        opacity: 0;
+        }
+        }
+  
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <header class="header">
+            <header class="main_header">
+                <h1>BeBetter</h1>
+            </header>
+            <nav class="header_navigation">
+                <a href="" class="navigaton_menu_link">
+                    <ul class="navigation_menu">
+                        <li class="navigation_menu_item"><a href="#" class="navigation_menu_link" style="color: rgba(255, 255, 255, 0.7);">Strona główna</a></li>
+                        <li class="navigation_menu_item"><a href="src/sites/notatki.html" class="navigation_menu_link">Notatki</a></li>
+                        <li class="navigation_menu_item"><a href="src/sites/narzedzia.html" class="navigation_menu_link">Narzędzia</a></li>
+                        <li class="navigation_menu_item"><a href="src/sites/progres.html" class="navigation_menu_link">Twój progres</a></li>
+                    </ul>
+                </a>
+            </nav>
+        </header>
+        <main class="main">
+            <article class="cite_container">
+                <img id="slider_image" class="image" src="src/images/books.png" alt="books">
+                <h2 id="cite">Jeżeli codziennie będziesz czytał 10 stron książki. To w rok przeczytasz 10 średniej długości książek</h2>
+                <img id="arrow_left" src="src/icons/iconmonstr-arrow-left-circle-lined-48.png" alt="">
+                <img id="arrow_right" src="src/icons/iconmonstr-arrow-right-circle-lined-48.png" alt="">
+            </article>
+            <h3>Twoje cele na dzisiaj</h3>
+            <article class="goals_container">
+                <h4 id="goals_container_no_goal_alert">Nie masz żadnych celi na dzisiaj, dodaj je <a class="add_goal_link" href="src/sites/narzedzia.html">Tutaj</a></h4>
+                
+            </article>
+        </main>
+        <footer class="footer">
+            <h3>Copyright&copy; Nikodem Młyński & Kuba Schreiber(póki co nie)</h3>
+        </footer>
+        
+    </div>
+    <div id="sites_toolbox">
+        <ul class="navigation_menu">
+            <li class="navigation_menu_item"><a href="#" class="navigation_menu_link" style="color: rgba(255, 255, 255, 0.7);"><img src="src/icons/icon_home_color.png" alt="" class="menu_link_icon"></a></li>
+            <li class="navigation_menu_item"><a href="src/sites/notatki.html" class="navigation_menu_link"><img src="src/icons/icon_notes_color.png" alt="" class="menu_link_icon"></a></li>
+            <li class="navigation_menu_item"><a href="src/sites/narzedzia.html" class="navigation_menu_link"><img src="src/icons/icon_tools_color.png" alt="" class="menu_link_icon"></a></li>
+            <li class="navigation_menu_item"><a href="src/sites/progres.html" class="navigation_menu_link"><img src="src/icons/icon_stats_color.png" alt="" class="menu_link_icon"></a></li>
+        </ul>
+        
+    </div>
+    <style>
+        .logo-container{
+            position: absolute; 
+        }
+        @keyframes spin {
+            100% {
+            transform: rotate(1turn);
+            }
+            
+        }
+        @keyframes spin2 {
+                100% {
+                transform: rotate(-1turn);
+            }
+        }
+        </style>
+        <div id="loading_icon_container">
+            <script>
+       
+                const loading_icon_container = document.querySelector('#loading_icon_container');
+                if(document.cookie){
+                    loading_icon_container.style.display = 'none';
+                }else{
+                    setTimeout(
+                        () => location.href='src/sites/logowanie.html',
+                        2000
+                    )
+                }
+                </script>
+            <div class="logo-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <img height="200px" style="z-index: 0;" src="./src/images/logo/main.png">
+                <img height="80px" style="z-index: 1; animation: spin 3s infinite ease-out; left: 40px; top: 40px; position: absolute;" src="./src/images/logo/cog.png">
+                <img height="60px" style="z-index: 2; animation: spin2 3s infinite ease-out; left: 108px; top: 40px; position: absolute;" src="./src/images/logo/cog2.png">
+                <img height="52px" style="z-index: 3; animation: spin 3s infinite ease-out; left: 100px; top: 92px; position: absolute;" src="./src/images/logo/cog3.png">
+            </div>
+        </div>
+        <script src="src/js/main.js"></script>
+        <script>
+            AOS.init();
+          </script>
+</body>
+</html>
