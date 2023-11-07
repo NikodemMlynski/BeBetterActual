@@ -43,6 +43,8 @@ Aplikacja BeBetter korzysta z następujących zależności, które zostaną zain
 
 -nodemon: ^3.0.1
 
+A także biblioteki [AOS](https://michalsnik.github.io/aos/)
+
 ## Funkcje
 Planer nawyków: Pozwala na dodawanie nawyków z tytułem, czasem wykonania i opcjonalnym opisem.
 
