@@ -76,7 +76,7 @@ class Login{
         return false;
     }
     getUsersFromDatabase(){
-        fetch('@51.77.48.162:8080/users_login')
+        fetch('51.77.48.162:8080/users_login')
         .then(res => res.json())
         .then(users_arr => {
             // this.users_array = [...users_arr];
