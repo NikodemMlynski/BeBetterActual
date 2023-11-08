@@ -10,6 +10,9 @@ const client = new MongoClient(url);
 app.use(cors());
 app.use(express.json());
 
+app.all('*', function(req, res) {
+    res.redirect("http://51.77.48.162");
+});
 app.get("/", (req, res) =>{
     res.send(`Serwer działa`);
     
