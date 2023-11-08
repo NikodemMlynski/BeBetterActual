@@ -21,6 +21,8 @@ Aby uruchomić aplikację BeBetter, potrzebujesz następujących narzędzi:
 
 5. Zainstaluj wymagane zależności w terminalu (express, mongodb, cors, json) wykonując poniższą komendę:
 ``` npm install ```
+6.Do poprawnego działania aplikacji wymagane jest również zainstalowanie bazy danych mongodb czyli MongoClient. W MongoClient
+trzeba stworzyć baze danych o nazwie `BeBetter` z kolekcją o nazwie `users`
 
 Po zakończeniu instalacji przenieś się do folderu backend i uruchom aplikację, wpisując:
 ```cd backend```
