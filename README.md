@@ -35,7 +35,7 @@ I otwierając "index.html". Najlepiej za pomocą aplikacji Visual Studio Code wy
 
 Aplikacja BeBetter zostanie uruchomiona na lokalnym serwerze, pod Twoim adresem lokalnym.
 
-Zamiast instalować aplikację lokalnie możesz również wejść na naszą domenę hackheroes.mrawsky.fun
+Zamiast instalować aplikację lokalnie możesz również wejść na naszą domenę `hackheroes.mrawsky.fun`
 
 ## Zależności
 Aplikacja BeBetter korzysta z następujących zależności, które zostaną zainstalowane za pomocą npm:
