@@ -23,6 +23,9 @@ Aby uruchomić aplikację BeBetter, potrzebujesz następujących narzędzi:
 ``` npm install ```
 6.Do poprawnego działania aplikacji wymagane jest również zainstalowanie bazy danych mongodb czyli MongoClient. W MongoClient
 trzeba stworzyć baze danych o nazwie `BeBetter` z kolekcją o nazwie `users`
+7. Aby dane do bazy danych wysyłały się poprawnie, trzeba zmienić adresy wysyłanych plików na lokalne, wszystkie
+   wymagane zmiany są zawarte w folderze /instrukcja instalacji. Trzeba wpisać wszędzie adres `http://127.0.0.1:8080/NAZWA_ADRESU NP. /users`.
+8. W pliku backend.js w linijce 7 do stałej `url` trzeba przypisać wartość: `mongodb://localhost:27017`
 
 Po zakończeniu instalacji przenieś się do folderu backend i uruchom aplikację, wpisując:
 ```cd backend```
