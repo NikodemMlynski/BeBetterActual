@@ -17,18 +17,17 @@ Aby uruchomić aplikację BeBetter, potrzebujesz następujących narzędzi:
 1. Sklonuj lub pobierz repozytorium.
    ```git clone https://github.com/NikodemMlynski/BeBetterActual ```
 
-3. Otwórz terminal i przejdź do katalogu projektu.
-   ``` cd BeBetterActual ```
+3. Przejdź przejdź do katalogu projektu.
 
-5. Zainstaluj wymagane zależności, wykonując poniższą komendę:
+5. Zainstaluj wymagane zależności w terminalu (express, mongodb, cors, json) wykonując poniższą komendę:
 ``` npm install ```
 
 Po zakończeniu instalacji przenieś się do folderu backend i uruchom aplikację, wpisując:
 ```cd backend```
 ```node index.js```
-I otwierając "index.html".
+I otwierając "index.html". Najlepiej za pomocą aplikacji Visual Studio Code wybierając opcję live server (trzeba zainstalowac wtyczkę liveserwer)
 
-Aplikacja BeBetter zostanie uruchomiona na lokalnym serwerze. Otwórz przeglądarkę i przejdź pod adres http://localhost:3000, aby korzystać z aplikacji.
+Aplikacja BeBetter zostanie uruchomiona na lokalnym serwerze, pod Twoim adresem lokalnyum.
 Lub wejdź na naszą domenę hackheroes.mrawsky.fun
 
 ## Zależności
