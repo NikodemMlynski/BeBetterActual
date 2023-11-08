@@ -36,6 +36,7 @@ class Progres {
         this.months = ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'];
         this.actual_month = actual_date.getMonth();
         this.actual_year = actual_date.getFullYear();
+        this.progres_analistic_date_html.innerHTML = this.months[this.actual_month] + ` ${this.actual_year}`;
 
         
 
