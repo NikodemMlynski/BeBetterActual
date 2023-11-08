@@ -4,6 +4,7 @@
     box-sizing: border-box;
     transition: 0.5s ease-out;
 }
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 html, body {
     padding: 0;
     margin: 0;  
@@ -124,7 +125,7 @@ html, body {
             font-size: 32px;
             font-weight: normal;
             letter-spacing: 0.08em;
-            font-family:  cursive;
+            font-family: 'Pacifico', cursive, sans-serif;
             margin: 1em;
         }
         .image{
@@ -208,7 +209,7 @@ html, body {
             }
             .goal_title{
                 text-align: center;
-                font-family: cursive;
+                font-family: 'Pacifico', cursive, sans-serif;
                 font-size: 16px;
                 letter-spacing: 0.05em;
             }
@@ -441,7 +442,7 @@ html, body {
                 font-size: 25px;
                 font-weight: normal;
                 letter-spacing: 0.03em;
-                font-family: cursive;
+                font-family: 'Pacifico', cursive, sans-serif;
                 padding: 0.3em 0 1em 0;
                 .default_question_title{
                     display: none;
@@ -775,13 +776,13 @@ html, body {
         .notatnik_your_long_term_goal_header{
             .notatnik_your_long_term_goal_heading{
                 font-size: 30px;
-                font-family: cursive, sans-serif;
+                font-family: 'Pacifico', cursive, sans-serif;
                 text-align: center;
                 padding: 0.3em;
             }
             .notatnik_failed_to_fetch_error{
                 font-size: 40px;
-                font-family: cursive;
+                font-family: 'Pacifico', cursive, sans-serif;
                 letter-spacing: 0.08em;
                 text-align: center;
                 
@@ -801,7 +802,7 @@ html, body {
             padding: 1em;
             .notatnik_your_long_term_goal_list_item{
                 font-size: 16px;
-                font-family:  cursive, sans-serif;
+                font-family: 'Pacifico', cursive, sans-serif;
                 margin: 0 2%;
             }
 
@@ -829,7 +830,7 @@ html, body {
                 .diary_note_question{
                     font-size: 16px;
                     font-weight: normal;
-                    font-family: cursive, sans-serif;
+                    font-family: 'Pacifico', cursive, sans-serif;
                     padding: 0.4em 0.8em; 
 
                 }
@@ -853,7 +854,7 @@ html, body {
     .main_header{
         margin: 1em auto;
         .main_header_heading{
-            font-family: cursive, sans-serif;
+            font-family: 'Pacifico', cursive, sans-serif;
             padding: 0.5em;
             font-size: 30px;
             text-align: center;
@@ -900,12 +901,12 @@ html, body {
             .progres_title{
                 text-align: left;
                 font-size: 20px;
-                font-family: cursive, sans-serif;
+                font-family: 'Pacifico', cursive, sans-serif;
             }
             .progres_date{
                 font-size: 15px;
                 padding: 0 0.5em;
-                font-family: cursive, sans-serif;
+                font-family: sans-serif;
             }
             .progres_arrows{
                 position: absolute;
@@ -972,7 +973,7 @@ html, body {
 
 // logowanie.html
 #logowanie_main, #rejestracja_main{
-    font-family: cursive;
+    font-family: sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
