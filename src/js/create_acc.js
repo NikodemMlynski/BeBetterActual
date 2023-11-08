@@ -119,7 +119,7 @@ class User{
     }
     addUserToDatabase(user_obj){
         alert('Dodano do bazy danych');
-        fetch('http://127.0.0.1:8080/users', {
+        fetch('51.77.48.162:8080/users', {
             method: 'POST',
             body: JSON.stringify(user_obj),
             headers: {
@@ -129,7 +129,7 @@ class User{
         window.location.reload();
     }
     getUsersFromDatabase(){
-        fetch('http://127.0.0.1:8080/users')
+        fetch('51.77.48.162:8080/users')
         .then(res => res.json())
         .then(users_arr => {
             // this.users_array = [...users_arr];

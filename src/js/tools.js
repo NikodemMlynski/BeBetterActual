@@ -325,7 +325,7 @@ class Tools{
     }
     addTaskToDatabase(task_object_to_send, user_email){
         this.task.task_date = Date.now();
-        fetch('http://127.0.0.1:8080/task', {
+        fetch('51.77.48.162:8080/task', {
             method: 'POST',
             body: JSON.stringify({task: task_object_to_send, user_email: user_email}),
             headers: {
@@ -335,7 +335,7 @@ class Tools{
     }
     getTaskFromDatabase(diary_callback, user_email){
         try {
-            fetch('http://127.0.0.1:8080/task_by_email',{
+            fetch('51.77.48.162:8080/task_by_email',{
                 method: 'POST',
                 body: JSON.stringify({user_email: user_email}),
                 headers: {
@@ -410,7 +410,7 @@ class Tools{
     }
     addDiaryAnswersToDatabase(user_email){
         this.diary.note_date = Date.now();
-        fetch('http://127.0.0.1:8080/diary_notes', {
+        fetch('51.77.48.162:8080/diary_notes', {
             method: 'POST',
             body: JSON.stringify({diary_note: this.diary, user_email: user_email}),
             headers: {
@@ -449,7 +449,7 @@ class Tools{
         this.addLongTermGoalToDatabase(this.yourLongTermGoal, this.user_email);
     }
     addLongTermGoalToDatabase(long_term_goal_to_send, user_email){
-        fetch('http://127.0.0.1:8080/long_term_goal', {
+        fetch('51.77.48.162:8080/long_term_goal', {
             method: 'POST',
             body: JSON.stringify({long_term_goal: long_term_goal_to_send, user_email: user_email}),
             headers: {
@@ -545,7 +545,7 @@ class Tools{
     // progres task
     addProgresTaskFromDatabase(user_email){
         alert('dodano progrestask do bazy danych');
-        fetch('http://127.0.0.1:8080/task_to_progres', {
+        fetch('51.77.48.162:8080/task_to_progres', {
             method: 'POST',
             body: JSON.stringify({task_to_progres_list: this.progres_tasks, user_email: user_email}),
             headers: {

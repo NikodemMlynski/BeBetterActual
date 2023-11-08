@@ -125,7 +125,7 @@ class Progres {
 
     }
     getTaskToProgresFromDatabase(callback, user_email){
-        fetch('http://127.0.0.1:8080/task_to_progres_by_email', {
+        fetch('51.77.48.162:8080/task_to_progres_by_email', {
             method: 'POST',
             body: JSON.stringify({user_email: user_email}),
             headers: {

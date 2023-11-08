@@ -103,7 +103,7 @@ class TaskDisplayer {
 
     getTaskFromDatabase(deleteAndCheckOffCallback, user_email){
         try {
-            fetch('http://127.0.0.1:8080/task_by_email', {
+            fetch('51.77.48.162:8080/task_by_email', {
                 method: 'POST',
                 body: JSON.stringify({user_email: user_email}),
                 headers: {
@@ -177,7 +177,7 @@ class TaskDisplayer {
     deleteTask(e, user_email){
         const task_obj = JSON.parse(e.getAttribute('data-goal-obj'));
         console.log(task_obj);
-        fetch('http://127.0.0.1:8080/task', { 
+        fetch('51.77.48.162:8080/task', { 
             method: "DELETE",
             headers: {
                 "Content-Type" : "application/json"
