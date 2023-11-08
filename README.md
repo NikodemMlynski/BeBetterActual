@@ -25,7 +25,7 @@ Aby uruchomić aplikację BeBetter, potrzebujesz następujących narzędzi:
 Do poprawnego działania aplikacji wymagane jest również zainstalowanie bazy danych mongodb czyli MongoClient. W MongoClient
 trzeba stworzyć baze danych o nazwie `BeBetter` z kolekcją o nazwie `users`
 7. Aby dane do bazy danych wysyłały się poprawnie, trzeba zmienić adresy wysyłanych plików na lokalne, wszystkie
-   wymagane zmiany są zawarte w folderze /instrukcja instalacji. Trzeba wpisać wszędzie adres `http://127.0.0.1:8080/NAZWA_ADRESU np. /users`.
+   wymagane zmiany są zawarte w folderze /instrukcja instalacji. W każdej funkcji fetch() jako argument należy podać adres: `http://127.0.0.1:8080/NAZWA_ADRESU np. /users`.
 8. W pliku backend.js w linijce 7 do stałej `url` trzeba przypisać wartość: `mongodb://localhost:27017`
 
 Po zakończeniu instalacji przenieś się do folderu backend i uruchom aplikację, wpisując:
@@ -34,7 +34,8 @@ Po zakończeniu instalacji przenieś się do folderu backend i uruchom aplikacj�
 I otwierając "index.html". Najlepiej za pomocą aplikacji Visual Studio Code wybierając opcję live server (trzeba zainstalować wtyczkę liveserwer)
 
 Aplikacja BeBetter zostanie uruchomiona na lokalnym serwerze, pod Twoim adresem lokalnym.
-Lub wejdź na naszą domenę hackheroes.mrawsky.fun
+
+Zamiast instalować aplikację lokalnie możesz również wejść na naszą domenę hackheroes.mrawsky.fun
 
 ## Zależności
 Aplikacja BeBetter korzysta z następujących zależności, które zostaną zainstalowane za pomocą npm:
