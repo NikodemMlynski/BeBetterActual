@@ -343,9 +343,10 @@ html, body {
         }
     }
     .main{
-        padding: 3em 1em;
+        padding: 3em 0.5em;
 
         .cite_container{
+            padding: 1em 2.5em;
             width: 100%;
             flex-direction: column;
             #cite{
@@ -357,6 +358,12 @@ html, body {
             }
             #arrow_left, #arrow_right{
                 top: 50%;
+            }
+            #arrow_left{
+                left: 0.5em;
+            }
+            #arrow_right{
+                right: 0.5em;
             }
         }
     }
