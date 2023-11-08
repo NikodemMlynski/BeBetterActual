@@ -4,7 +4,7 @@ const app = express();
 
 const mongo = require("mongodb");
 const MongoClient = mongo.MongoClient;
-const url = "mongodb://127.0.0.1:27017";
+const url = "mongodb://51.77.48.162:27017/";
 const client = new MongoClient(url);
 
 app.use(cors());
