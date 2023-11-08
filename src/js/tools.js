@@ -208,7 +208,6 @@ class Tools{
                      }
                      
                     const checkedValue = getCheckedRadioValue();
-                    alert(checkedValue);
                     if(checkedValue){
                         document.querySelector('#breathingTestButton').style.display = 'none';
                         let increaseBreathAnimationTimer = setInterval(() =>{
@@ -544,7 +543,6 @@ class Tools{
 
     // progres task
     addProgresTaskFromDatabase(user_email){
-        alert('dodano progrestask do bazy danych');
         fetch('51.77.48.162:8080/task_to_progres', {
             method: 'POST',
             body: JSON.stringify({task_to_progres_list: this.progres_tasks, user_email: user_email}),

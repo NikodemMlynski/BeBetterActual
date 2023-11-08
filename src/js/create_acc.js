@@ -106,9 +106,12 @@ class User{
             }
         })
         if(same_email){
-            alert('Taki email już istnieje');
+            this.email_html.classList.add('bad_validated');
+            document.querySelector('#email_validate_info').innerHTML = `taki email już istnieje`;
             return false;
         }
+        this.email_html.classList.remove('bad_validated');
+        document.querySelector('#email_validate_info').innerHTML = ``;
         return true;
     }
     setInputsEmpty(){
@@ -118,7 +121,6 @@ class User{
         this.repeated_password_html.value = '';
     }
     addUserToDatabase(user_obj){
-        alert('Dodano do bazy danych');
         fetch('51.77.48.162:8080/users', {
             method: 'POST',
             body: JSON.stringify(user_obj),

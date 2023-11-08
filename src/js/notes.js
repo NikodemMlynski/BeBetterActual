@@ -142,7 +142,6 @@ class Notes {
         // diary_notes_container_list.forEach()
         console.log(diary_notes_list);
         if(diary_notes_list.length <= 0){
-            alert('nie ma elementów');
             return;
         }
         diary_notes_list.slice().reverse().forEach((diary_obj, index) => {
