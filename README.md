@@ -25,9 +25,9 @@ Aby uruchomić aplikację BeBetter, potrzebujesz następujących narzędzi:
 Po zakończeniu instalacji przenieś się do folderu backend i uruchom aplikację, wpisując:
 ```cd backend```
 ```node index.js```
-I otwierając "index.html". Najlepiej za pomocą aplikacji Visual Studio Code wybierając opcję live server (trzeba zainstalowac wtyczkę liveserwer)
+I otwierając "index.html". Najlepiej za pomocą aplikacji Visual Studio Code wybierając opcję live server (trzeba zainstalować wtyczkę liveserwer)
 
-Aplikacja BeBetter zostanie uruchomiona na lokalnym serwerze, pod Twoim adresem lokalnyum.
+Aplikacja BeBetter zostanie uruchomiona na lokalnym serwerze, pod Twoim adresem lokalnym.
 Lub wejdź na naszą domenę hackheroes.mrawsky.fun
 
 ## Zależności
