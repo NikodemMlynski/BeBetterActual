@@ -99,6 +99,11 @@ class Progres {
         }
         console.log('max',max);
         let finalWidthsList = [];
+        if(widthsList.length === 0) {
+            this.progres_analistic_html.classList.add('empty_analistic');
+        }else{
+            this.progres_analistic_html.classList.remove('empty_analistic');
+        }
         
         finalWidthsList = widthsList.map(width => width = width * 150 / max);
         
@@ -121,12 +126,12 @@ class Progres {
             actualElement.style.transform = `translateY(${150  - block_height }px)`;
             actualElement.innerHTML = widthsList[i].replace('.', ':') + `<div class="progres_analistic_date" id="daydate${i+1}">${dateDayList[i]}</div>`;  // trzeba zrobić żeby data zadania była position absolut i wyświetlało się idealnie pod zadaniem, tak jak w spendly
             document.querySelector(`#daydate${i+1}`).style.top = `${block_height + 22}px`;
-
+            ///     ZROB TAK KIEDYH WYKRES JEST PUSTY TO DODAJE SIE PADDING ZEBY STRZALKI BYLY W TYM SAMYM MIEJSCU NA STRONIE
         }  
 
     }
     getTaskToProgresFromDatabase(callback, user_email){
-        fetch('51.77.48.162:8080/task_to_progres_by_email', {
+        fetch('http://51.77.48.162/task_to_progres_by_email', {
             method: 'POST',
             body: JSON.stringify({user_email: user_email}),
             headers: {
