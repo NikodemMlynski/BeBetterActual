@@ -46,7 +46,7 @@ class Login{
                     console.log(document.cookie);
 
                     setTimeout(() => {
-                        location.href='../../index.html';
+                        location.href='/';
 
                     }, 500);
                 }else {
