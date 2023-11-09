@@ -132,20 +132,22 @@ html, body {
 .main .cite_container .image {
   width: 20%;
 }
-.main .cite_container #arrow_left, .main .cite_container #arrow_right {
-  position: absolute;
-  cursor: pointer;
-  opacity: 0.9;
-  transition: 0.4s all ease;
-}
-.main .cite_container #arrow_left:hover, .main .cite_container #arrow_right:hover {
-  opacity: 0.6;
-}
 .main .cite_container #arrow_left {
   left: 2em;
 }
 .main .cite_container #arrow_right {
   right: 2em;
+}
+.main .cite_container .main_arrows {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.4s all ease;
+}
+.main .cite_container .main_arrows:hover {
+  opacity: 0.6;
 }
 .main h3 {
   text-align: center;
@@ -670,6 +672,7 @@ html, body {
   }
   #tools_main .actual_selected_tool {
     margin-top: 2em;
+    padding: 2.2em 2em 6em 2em;
     width: 100%;
   }
   #tools_main .actual_selected_tool form #taskTitle {
@@ -782,6 +785,14 @@ html, body {
   line-height: 1.4em;
 }
 
+@media screen and (max-width: 800px) {
+  #notatnik_main .notatnik_diary_notes_container .notatnik_diary_note {
+    width: 93%;
+  }
+}
+#progres_main {
+  transition: 0;
+}
 #progres_main .main_header {
   margin: 1em auto;
 }
@@ -858,7 +869,11 @@ html, body {
 #progres_main .progres_analistic_container .progres_header #progres_arrow_right {
   right: -4em;
 }
+#progres_main .progres_analistic_container .empty_analistic {
+  padding-top: 6.5em;
+}
 #progres_main .progres_analistic_container .progres_analistic {
+  transition: 0;
   display: flex;
 }
 #progres_main .progres_analistic_container .progres_analistic .day_in_analistic {

@@ -131,7 +131,15 @@ html, body {
         .image{
             width: 20%;
         }
-        #arrow_left, #arrow_right{
+        #arrow_left{
+            left: 2em;
+        }
+        #arrow_right{
+            right: 2em;
+        }
+        .main_arrows{
+            width: 45px;
+            height: 45px;
             position: absolute;
             cursor: pointer;
             opacity: 0.9;
@@ -139,12 +147,6 @@ html, body {
             &:hover{
                 opacity: 0.6;
             }
-        }
-        #arrow_left{
-            left: 2em;
-        }
-        #arrow_right{
-            right: 2em;
         }
     }
     h3{
@@ -719,6 +721,7 @@ html, body {
         
         .actual_selected_tool{
             margin-top: 2em;
+            padding: 2.2em 2em 6em 2em;
             width: 100%;
             form{    
                 #taskTitle{
@@ -856,8 +859,18 @@ html, body {
         }
     }
 }
+@media screen and (max-width: 800px){
+    #notatnik_main{
+        .notatnik_diary_notes_container{
+            .notatnik_diary_note{
+                width: 93%;
+            }
+        }
+    }
+}
 
 #progres_main{
+    transition: 0;
     .main_header{
         margin: 1em auto;
         .main_header_heading{
@@ -935,7 +948,11 @@ html, body {
 
             }
         }
+        .empty_analistic{
+            padding-top: 6.5em;
+        }
         .progres_analistic{
+            transition: 0;
             display: flex;
             .day_in_analistic{
                 background-color: rgba(1, 42, 52, 0.8);
