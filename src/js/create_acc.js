@@ -128,6 +128,7 @@ class User{
                 'Content-type': 'application/json',
             }
         })
+        console.log('Dodano do bazy danych');
         window.location.reload();
     }
     getUsersFromDatabase(){
