@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'http://51.77.48.162');
+    res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     next();
@@ -129,6 +129,7 @@ async function addUserToDatabase(user_obj){
             email: email,
             password: password
         });
+        res.status(201);
     }catch(err){
         console.log(err);
     }finally{
@@ -196,6 +197,8 @@ async function addLongTermGoalToDatabase(long_term_goal, user_email){
         await collection.insertOne({
             long_term_goal: long_term_goal
         })
+        res.status(201);
+
     }catch(err){
         console.log(err);
     }finally{
@@ -241,6 +244,8 @@ async function addTaskToDatabase(task, user_email){
         await collection.insertOne({
             task: task
         })
+        res.status(201);
+
     }catch(err){
         console.log(err);
     }finally{
@@ -278,6 +283,7 @@ async function deleteTaskById(task, req, res, user_email){
         const collection = client.db('BeBetter').collection(`tasks${user_email}`);
         const result = await collection.deleteMany({task});
         console.log(`Deleted ${result.deletedCount}`);
+        res.status(201);
 
     }catch(err){
         console.log(err);
@@ -307,6 +313,8 @@ async function updateTaskIfCompleted(task, req, res, user_email){
             }
         }
         )
+        res.status(201);
+
         // WAŻNE !!!!!!!!! w main.js trzeba zrobić funkcję która, każdego dnia o godzinie 24 ustala we wszystkich zadaniach complete na false !!!!!!!!!!
 
     }catch(err){
@@ -328,6 +336,7 @@ async function AddDiaryNotesToDatabase(diary_note, user_email){
         await collection.insertOne({
             diary: diary_note
         })
+        res.status(201);
     }catch(err){
         console.log(err);
     }finally{
@@ -366,6 +375,7 @@ async function AddProgresTaskDatabase(progres_tasks, user_email){
         const collection = client.db('BeBetter').collection(`task_to_progres${user_email}`);
         console.log(progres_tasks);
         await collection.insertMany(progres_tasks);
+        res.status(201);
         
     }catch(err){
         console.log(err);
