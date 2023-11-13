@@ -103,7 +103,7 @@ class TaskDisplayer {
 
     getTaskFromDatabase(deleteAndCheckOffCallback, user_email){
         try {
-            fetch('http://51.77.48.162/task_by_email', {
+            fetch('http://51.77.48.162:8080/task_by_email', {
                 method: 'POST',
                 body: JSON.stringify({user_email: user_email}),
                 headers: {
