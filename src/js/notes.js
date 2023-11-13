@@ -17,41 +17,19 @@ class Notes {
     // imitacja pobierania z bazy danych
     diary_notes_container_from_database_list = [
         {
-            diary_date: '5 Oct 2023',
+            diary_date: '',
             diary_notes: {
-                general_about_day: 'Wstałem jak codzień rano i okazało się że świat pojebało poszłem do szkoły programowałem poszłem na siłownie.Wstałem poszłem do szkoły programowałem poszłem na siłownie.Wstałem poszłem do szkoły programowałem poszłem na siłownie.Wstałem poszłem do szkoły programowałem poszłem na siłownie.',
-                whats_wrong_today: 'Zapomniałem przeczytać książki, zwyzywałem kogoś.',
-                whats_good_today: 'Wycisnąłem 125kg na klatę',
-                glass_of_whater: 30,
-                amount_of_kcalories: 3138,
-                amount_of_sleep: 7.45 * 60, // in minutes
-                quality_of_sleep: 82,
+                general_about_day: '',
+                whats_wrong_today: '',
+                whats_good_today: '',
+                glass_of_whater: 0,
+                amount_of_kcalories: 0,
+                amount_of_sleep: 0 * 0, // in minutes
+                quality_of_sleep: 0,
             }
         },
-        {
-            diary_date: '6 Oct 2023',
-            diary_notes: {
-                general_about_day: 'Wstałem jak codzień rano i okazało się że świat pojebało ',
-                whats_wrong_today: 'Zpizgałem się jak szmata',
-                whats_good_today: 'Długo programowałem',
-                glass_of_whater: 28,
-                amount_of_kcalories: 7138,
-                amount_of_sleep: 8.45 * 60, // in minutes
-                quality_of_sleep: 80,
-            }
-        },
-        {
-            diary_date: '7 Oct 2023',
-            diary_notes: {
-                general_about_day: 'Wstałem jak codzień rano i okazało się że świat pojebało ',
-                whats_wrong_today: 'Dostałem pizde z polskiego',
-                whats_good_today: 'Długo programowałem',
-                glass_of_whater: 28,
-                amount_of_kcalories: 7138,
-                amount_of_sleep: 8.45 * 60, // in minutes
-                quality_of_sleep: 80,
-            }
-        },
+        
+        
         
     ]
     
@@ -60,18 +38,7 @@ class Notes {
     // long term goals
     long_term_goal_ul = document.querySelector('.notatnik_your_long_term_goal_list');
     long_term_goals_list = [];
-    // diary_notes_container = {
-    //     diary_date: null,
-    //     diary_notes: {
-    //         general_about_day: null,
-    //         whats_wrong_today: null,
-    //         whats_good_today: null,
-    //         glass_of_whater: 0,
-    //         amount_of_kcalories: 0,
-    //         amount_of_sleep: 0, // in minutes
-    //         quality_of_sleep: 0,
-    //     }
-    // }
+    
     months_list = ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'];
     init(user_email){
         this.getLongTermGoalsFromDatabase(user_email);   
