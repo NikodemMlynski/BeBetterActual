@@ -41,9 +41,9 @@ class Login{
                 if(correct_loged){
                     this.correct_sing_up_password_html.innerHTML = '';
                     const cookie_template = `email=${this.email}; path=/`
-                    console.log(cookie_template);
+                    // console.log(cookie_template);
                     document.cookie = cookie_template;
-                    console.log(document.cookie);
+                    // console.log(document.cookie);
 
                     setTimeout(() => {
                         location.href='/';
@@ -83,11 +83,11 @@ class Login{
             users_arr.forEach((el) => {
                 this.email_list.push(el.email);
                 this.password_list.push(el.password);
-                console.log(el);
+                // console.log(el);
             });
         });
-        console.log(this.email_list);
-        console.log(this.password_list);
+        // console.log(this.email_list);
+        // console.log(this.password_list);
     }
 }
 

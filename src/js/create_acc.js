@@ -128,7 +128,7 @@ class User{
                 'Content-type': 'application/json',
             }
         })
-        console.log('Dodano do bazy danych');
+        // console.log('Dodano do bazy danych');
         window.location.reload();
     }
     getUsersFromDatabase(){
@@ -140,7 +140,7 @@ class User{
                 this.users_array.push(el)
             });
         });
-        console.log(this.users_array);
+        // console.log(this.users_array);
     }
     
     

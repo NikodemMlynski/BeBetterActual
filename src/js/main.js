@@ -1,8 +1,8 @@
 window.onload = function(){
     const loading_icon_container = document.querySelector('#loading_icon_container');
-    console.log('cookie:', document.cookie);
+    // console.log('cookie:', document.cookie);
     const user_email = document.cookie.slice(6); // 6 żeby obcięło email=
-    console.log(user_email);
+    // console.log(user_email);
     if(document.cookie){
         loading_icon_container.style.display = 'none';
         slider.init(user_email);
@@ -139,11 +139,8 @@ class TaskDisplayer {
     displayTaskAtSite(tasks, deleteAndCheckOffCallback){
         this.taskContainerHTML.innerHTML = '';
         if(tasks.length > 0){
-            tasks.forEach(el => {
-                console.log(el);
-            })
             tasks.forEach(taskEl => {
-                console.log(taskEl);
+                // console.log(taskEl);
                 const task = taskEl.task;
                 const taskHTML = `
                 <section class="goal" id='task${task.task_date}'>
@@ -176,7 +173,7 @@ class TaskDisplayer {
     }
     deleteTask(e, user_email){
         const task_obj = JSON.parse(e.getAttribute('data-goal-obj'));
-        console.log(task_obj);
+        // console.log(task_obj);
         fetch('http://51.77.48.162:8080/task', { 
             method: "DELETE",
             headers: {
@@ -196,7 +193,7 @@ class TaskDisplayer {
     checkOffTask(e, user_email){
         // WAŻNE !!!!!!!!! w main.js trzeba zrobić funkcję która, każdego dnia o godzinie 24 ustala we wszystkich zadaniach complete na false !!!!!!!!!!
         const task_obj = JSON.parse(e.getAttribute('data-goal-obj'));
-        console.log(task_obj)
+        // console.log(task_obj)
         fetch('http://51.77.48.162:8080/task', { 
             method: "PATCH",
             headers: {

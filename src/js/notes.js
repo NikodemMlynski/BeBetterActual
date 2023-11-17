@@ -1,7 +1,7 @@
 // trzeba zrobić funkcje która będzie imitować pobieranie danych z bazy danych, a naprawdę będzie pobierać dane ze zmiennych
 
 window.onload = function(){
-    console.log('cookie:', document.cookie);
+    // console.log('cookie:', document.cookie);
     const user_email = document.cookie.slice(6); 
     if(document.cookie){
         notes.init(user_email);
@@ -54,7 +54,7 @@ class Notes {
         })
         .then(response => response.json())
         .then((data) => {
-            console.log(data);
+            // console.log(data);
             this.long_term_goals_list = data;
             this.renderLongTermGoalToHTML(data);
         });
@@ -77,7 +77,7 @@ class Notes {
         })
         .then(response => response.json())
         .then((data) => {
-            console.log(data);
+            // console.log(data);
             this.renderDiaryNotesToHTML(data)
         }).catch((err) => {
             const html_failder_to_fetch_error = document.querySelector('.notatnik_failed_to_fetch_error')
@@ -107,7 +107,7 @@ class Notes {
     renderDiaryNotesToHTML(diary_notes_list){
         // trzeba też zrobić funkcje wyświetlającą listę pytań i odpowiedzi w html w zależności z ilu dni jest lista tyle bloków zostanie wyświetlone w html
         // diary_notes_container_list.forEach()
-        console.log(diary_notes_list);
+        // console.log(diary_notes_list);
         if(diary_notes_list.length <= 0){
             return;
         }

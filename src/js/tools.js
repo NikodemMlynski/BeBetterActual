@@ -1,5 +1,5 @@
 window.onload = function(){
-    console.log('cookie:', document.cookie);
+    // console.log('cookie:', document.cookie);
     const user_email = document.cookie.slice(6); 
     if(document.cookie){
         tools.init(user_email);
@@ -287,13 +287,13 @@ class Tools{
                     
                         }, this.user_email
                     );
-                    console.log(this.tools.intelligentDiary);
+                    // console.log(this.tools.intelligentDiary);
                     
                 }
                     
                 else if(this.actualInputAttributeIndex > this.tools[this.actualFormTool].length - 1){
                     this.addDiaryAnswersToDatabase(this.user_email);
-                    console.log(this.iterable_diary);
+                    // console.log(this.iterable_diary);
                     this.addProgresTaskFromDatabase(this.user_email);
                     
                 }
@@ -318,7 +318,7 @@ class Tools{
          this.task.taskTime = this.taskTimeHTML.value;
          if(this.task.taskTime[0] == 0) this.task.taskTime = this.task.taskTime.substring(1);
          this.task.taskDescription = this.taskDescriptionHTML.value || 'brak opisu';
-         console.log(this.task);
+        //  console.log(this.task);
          this.addTaskToDatabase(this.task, user_email);
          this.setTaskInputEmpty();
     }
@@ -399,11 +399,11 @@ class Tools{
             else{
                 const diary_question_html = this.diaryQuestionsHTML.value.trim()
                 this.progres_tasks.push({title: taskToProgresTitle, duration: diary_question_html, date: Date.now()})
-                console.log(this.progres_tasks);
+                // console.log(this.progres_tasks);
             }
             this.goNextToolsFormInput();
-            console.log(this.diary);
-            console.log(this.actualInputAttributeIndex)
+            // console.log(this.diary);
+            // console.log(this.actualInputAttributeIndex)
         }
         
     }

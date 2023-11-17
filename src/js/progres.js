@@ -1,5 +1,5 @@
 window.onload = function(){
-    console.log('cookie:', document.cookie);
+    // console.log('cookie:', document.cookie);
     const user_email = document.cookie.slice(6); 
     if(document.cookie){
         progres.init(user_email);
@@ -66,7 +66,7 @@ class Progres {
             
             if(task_to_progres.title === task_to_progres_title && actual_task_to_progres_date.getMonth() === this.actual_month)
             {
-                console.log(task_to_progres)
+                // console.log(task_to_progres)
                 const duration_to_push1 = task_to_progres.duration[0] == '0' ? task_to_progres.duration.substring(1) : task_to_progres.duration;
                 const duration_to_push = duration_to_push1.replace(':', '.');
                 durationList.push(duration_to_push);
@@ -84,20 +84,20 @@ class Progres {
         const widthsList = [...duration_list];
         const dateList = [...date_list];
         const dateDayList = [];
-        console.log(widthsList, dateList);
+        // console.log(widthsList, dateList);
         dateList.forEach((date) => {
             const full_date = new Date(date);
             dateDayList.push(full_date.getDate());
         })
-        console.log('date day list');
-        console.log(dateDayList);
+        // console.log('date day list');
+        // console.log(dateDayList);
 
         let max = widthsList[0];
         for(let i = 0; i <=widthsList.length; i++){
             const actualEl = widthsList[i]; 
             if(actualEl > max) max = actualEl;
         }
-        console.log('max',max);
+        // console.log('max',max);
         let finalWidthsList = [];
         if(widthsList.length === 0) {
             this.progres_analistic_html.classList.add('empty_analistic');
@@ -121,7 +121,7 @@ class Progres {
             if(block_height == 0) actualElement.classList.add('no_value');
             else actualElement.classList.remove('no_value');
             
-            console.log('block-height', block_height);
+            // console.log('block-height', block_height);
             actualElement.style.height = block_height + 20 + 'px';
             actualElement.style.transform = `translateY(${150  - block_height }px)`;
             actualElement.innerHTML = widthsList[i].replace('.', ':') + `<div class="progres_analistic_date" id="daydate${i+1}">${dateDayList[i]}</div>`;  // trzeba zrobić żeby data zadania była position absolut i wyświetlało się idealnie pod zadaniem, tak jak w spendly
