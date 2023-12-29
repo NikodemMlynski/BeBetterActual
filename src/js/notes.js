@@ -45,7 +45,7 @@ class Notes {
         this.getDiaryNotesFromDatabase(user_email);     
     }
      getLongTermGoalsFromDatabase(user_email){
-        fetch('http://51.77.48.162:8080/long_term_goal_by_email', {
+        fetch('http://51.77.48.179:8080/long_term_goal_by_email', {
             method: 'POST',
             body: JSON.stringify({user_email: user_email}),
             headers: {
@@ -68,7 +68,7 @@ class Notes {
     
     getDiaryNotesFromDatabase(user_email){
         
-        fetch('http://51.77.48.162:8080/diary_notes_by_email', {
+        fetch('http://51.77.48.179:8080/diary_notes_by_email', {
             method: 'POST',
             body: JSON.stringify({user_email: user_email}),
             headers: {

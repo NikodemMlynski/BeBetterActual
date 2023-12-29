@@ -121,7 +121,7 @@ class User{
         this.repeated_password_html.value = '';
     }
     addUserToDatabase(user_obj){
-        fetch('http://51.77.48.162:8080/users', {
+        fetch('http://51.77.48.179:8080/users', {
             method: 'POST',
             body: JSON.stringify(user_obj),
             headers: {
@@ -132,7 +132,7 @@ class User{
         window.location.reload();
     }
     getUsersFromDatabase(){
-        fetch('http://51.77.48.162:8080/users')
+        fetch('http://51.77.48.179:8080/users')
         .then(res => res.json())
         .then(users_arr => {
             // this.users_array = [...users_arr];
